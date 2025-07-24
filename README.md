@@ -53,14 +53,49 @@ O fluxo principal executado no arquivo `main_pipeline.py` é dividido em três e
 
 ### 1. Clonar o repositório
 
-### Bash
+```bash
 git clone https://github.com/seu-usuario/seu-repo.git
 cd seu-repo
+```
 
-### Criar ambiente virtual (opcional)
+### 2. Criar ambiente virtual (opcional, mas recomendado)
+
+```bash
 python -m venv .venv
 source .venv/bin/activate   # No Linux/macOS
-.venv\Scripts\activate 
+.venv\Scripts\activate    # No Windows
+```
+
+### 3. Instalar as dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Rodar o pipeline completo
+
+```bash
+python main_pipeline.py
+```
+
+---
+
+## Requisitos
+
+### Dependências principais
+- Python ≥ 3.10
+- scikit-learn
+- matplotlib, seaborn
+- langchain
+- langchain-ollama
+- langchain-huggingface
+- torch, transformers
+- kneed (método do cotovelo)
+- ollama (modelo `llama3.1:latest`)
+
+### Requisitos adicionais (recomendados)
+- CUDA (para uso de embeddings em GPU)
+- Ollama instalado localmente: [https://ollama.com](https://ollama.com)
 
 ### Instalar as dependências 
 pip install -r requirements.txt
