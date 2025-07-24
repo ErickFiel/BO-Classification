@@ -1,4 +1,4 @@
-#Classificação, Clusterização e Sumarização de Relatos Criminais
+# Classificação, Clusterização e Sumarização de Relatos Criminais
 
 Este projeto realiza um pipeline completo de análise de **relatos de crimes**, com foco em **roubos de celular**, utilizando técnicas de **classificação supervisionada**, **clusterização não supervisionada** e **sumarização automática com LLMs**.
 
