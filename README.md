@@ -35,13 +35,17 @@ O fluxo principal executado no arquivo `main_pipeline.py` é dividido em três e
 ---
 
 ## Estrutura dos Arquivos
-├── base_roubo.csv # Base de entrada com os relatos
-├── main_pipeline.py # Executa o pipeline completo
-├── classification.py # Etapa de classificação com SVM
-├── clustering.py # Clusterização dos relatos de celular
-├── summarization.py # Sumarização usando LLM local (LangChain + Ollama)
-├── cluster_X.csv # Gerado após clusterização (usado na sumarização)
-├── requirements.txt # Dependências do projeto
+
+```plaintext
+.
+├── base_roubo.csv             # Base de entrada com os relatos
+├── main_pipeline.py           # Executa o pipeline completo
+├── classification.py          # Etapa de classificação com SVM
+├── clustering.py              # Clusterização dos relatos de celular
+├── summarization.py           # Sumarização usando LLM local (LangChain + Ollama)
+├── cluster_X.csv              # Gerado após clusterização (usado na sumarização)
+├── requirements.txt           # Dependências do projeto
+```
 
 ---
 
